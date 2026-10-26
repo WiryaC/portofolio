@@ -178,8 +178,9 @@ header {
    background-color: var(--color-primary);
    border-radius: var(--radius-card);
    color: var(--text-light);
-   padding: 15px 20px;
+   padding: 15px;
    text-decoration: none;
+   text-align: center;
    font-size: 1rem;
    transition: var(--transition-fast);
 }

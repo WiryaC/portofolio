@@ -174,14 +174,16 @@ header {
    color: var(--text-muted); 
 }
 .btn {
-   max-width: 140px;
+   max-width: 120px;
+   display: flex;
+   flex-wrap: nowrap;
    background-color: var(--color-primary);
    border-radius: var(--radius-card);
    color: var(--text-light);
    padding: 15px;
    text-decoration: none;
    text-align: center;
-   font-size: 1rem;
+   font-size: 0.85rem;
    transition: var(--transition-fast);
 }
 .btn:hover { background-color: var(--color-primary-hover); }

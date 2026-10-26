@@ -182,7 +182,7 @@ header {
    color: var(--text-light);
    padding: 15px;
    text-decoration: none;
-   text-align: center;
+   justify-content: center;
    font-size: 0.85rem;
    transition: var(--transition-fast);
 }

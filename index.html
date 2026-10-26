@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+   <title>Navbar Cazt</title>
+</head>
+<body>
+   <header>
+      <input type="checkbox" id="nav_toggle" class="nav-checkbox">
+      <nav class="nav">
+         <div class="logo">WiryaC</div>
+            <label for="nav_toggle" class="nav-toggle">
+               <i class="fas fa-bars open-icon"></i>
+               <i class="fas fa-xmark close-icon"></i>
+            </label>
+
+         <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">About</a></li>
+            <li><a href="#keterampilan">Skill</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+
+      <div class="dropdown">
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">About</a></li>
+            <li><a href="#keterampilan">Skill</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </div>
+   </header>
+
+   <!-- HERO SECTION -->
+   <main>
+      <section id="home" class="hero">
+         <div class="hero-text">
+            <h1>Hi,I'm <span>Wirya Casmita</span></h1>
+            <p>A Tech Enthusiast yang pindah dari <br>menghitung subnet ke membangun website <br>yang aman. Fokus pada fundamental, bukan shortcut.</p>
+            <a href="#" class="btn">Download CV</a>
+            <div class="sosial-brand">
+               <a href=""><i class="fab fa-instagram"></i></a>
+               <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+         </div>
+         
+         <div class="hero-img">
+            <img class="main-profile" src="image/tes.jpg" alt="foto">
+         </div>
+         
+      </section>
+
+      <!-- MAIN CONTENT -->
+      <section class="about" id="tentang">
+        <div class="about-left">
+          <h2>Who Am I </h2>
+        </div>
+         <div class="about-right">
+          <br>
+          <p>Saya lulusan <span>TJKT</span> yang tertarik pada logika di balik jaringan. Dibanding sekadar mengikuti langkah-langkah setting Mikrotik, saya lebih menikmati saat harus menghitung dan memecahkan logika <span>subnetting dan IP Address</span>.</p>
+          <br>
+          <p>Ketertarikan pada logika itu yang membawa saya ke <span>Cybersecurity</span>. Saya sadar, untuk benar-benar memahami cara kerja keamanan sebuah website dan database, saya juga harus paham cara membangunnya. Dari situlah saya mulai mendalami <span>Web Development</span>.</p>
+          <br>
+          <p>Saat ini saya fokus membangun ulang fundamental saya melalui project-project nyata, mulai dari membangun navbar responsive hingga portfolio ini, sebagai langkah awal menjadi Web Developer yang paham sisi keamanan.</p>
+        </div>
+      </section>
+      <section class="skill" id="keterampilan">
+         <h2>What I Can Do </h2>
+         <div class="card-skill">
+            <div class="hardskill">
+               <h3>Hardskill</h3>
+            <article class="card-hardskill">
+               <h4><i class="fas fa-network-wired"></i>IT & Networking</h4>
+               <ul type="circle">
+                  <li>HTML & CSS Dasar</li>
+                  <li>Fundamental CyberSecurity</li>
+                  <li>Mikrotik (Konfigurasi Wifi, Bloking situs, Dasar)</li>
+                  <li>Subnetting & Logika Jaringan</li>
+                  <li>Instalasi & Troubleshooting Jaringan (Pengkabelan)</li>
+               </ul>
+            </article>
+            <article class="card-hardskill">
+               <h4><i class="fas fa-screwdriver-wrench"></i>Hardware & Technical Support</h4>
+               <ul type="circle">
+                  <li>Rakit PC & Instalasi Windows</li>
+                  <li>Perawatan Perangkat Komputer</li>
+               </ul>
+            </article>
+            <article class="card-hardskill">
+               <h4><i class="fas fa-list-check"></i>Operational & SOP Compliance</h4>
+               <ul type="circle">
+                  <li>Basic Operation Pallet Mover</li>
+                  <li>Operator filling Manual & Mixer</li>
+               </ul>
+            </article>
+            </div>
+            <div class="softskill">
+               <h3>Softskill</h3>
+               <article class="card-softskill">
+                  <h4><i class="fas fa-users-gear"></i>Non-Teknis</h4>
+                  <ul type="circle">
+                     <li>Problem solving</li>
+                     <li>Adaptability</li>
+                     <li>Teamwork</li>
+                     <li>Basic Troubleshoot Hardware</li>
+                  </ul>
+               </article>
+            </div>
+         </div>
+      </section>
+      <section class="certified">
+         <h3>Certifications</h3>
+         <div class="certifications">
+            <div class="cup">
+            <img class="certi-1" src="image/tes.jpg" alt="certified">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolorum.</p>
+            </div>
+            <div class="cup">
+            <img class="certi-2" src="image/tes.jpg" alt="certified">
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt.</p>
+            </div>
+            <div class="cup">
+            <img class="certi-3" src="image/tes.jpg" alt="certified">
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt.</p>
+            </div>
+         </div>
+      </section>
+      <section class="projects">
+         <h3>Project </h3>
+      </section>
+   </main>
+
+
+
+   <script>
+     const toggle = document.getElementById('nav_toggle');
+     const links = document.querySelectorAll('.dropdown a');
+   
+     links.forEach(link => {
+       link.addEventListener('click', () => {
+         toggle.checked = false; 
+       });
+     });
+</script>
+</body>
+</html>

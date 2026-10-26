@@ -174,7 +174,7 @@ header {
    color: var(--text-muted); 
 }
 .btn {
-   max-width: 120px;
+   max-width: 140px;
    background-color: var(--color-primary);
    border-radius: var(--radius-card);
    color: var(--text-light);

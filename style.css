@@ -228,7 +228,7 @@ header {
    flex-direction: column;
    gap: 40px;
 }
-.about-left h2 { font-size: 42px; color: var(--text-dark); }
+.about-left h2 { font-size: 32px; color: var(--text-dark); }
 .about-right p {
    border-left: 3px solid var(--color-primary);
    padding-left: 20px;
@@ -256,7 +256,7 @@ header {
 }
 .skill .fas { font-size: 1.5em; margin-right: 7px; }
 .skill h2 { 
-   font-size: 42px; 
+   font-size: 32px; 
    color: var(--text-dark); 
 }
 .card-skill { 
@@ -301,9 +301,9 @@ header {
    display: flex;
    flex-direction: column;
    gap: 24px;
-   padding: 80px 3%;
+   padding: 80px 5%;
 }
-.certified h3 { padding-left: 20px; }
+.certified h2 { font-size: 32px; color: var(--text-dark); }
 .certifications {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

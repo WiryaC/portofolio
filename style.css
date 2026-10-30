@@ -189,7 +189,8 @@ header {
 .hero-text p { 
    font-size: clamp(0.9rem, 0.5dvw, 1.25rem); 
    line-height: 1.7rem; 
-   color: var(--text-muted); 
+   color: var(--text-muted);
+   max-width: 57%;
 }
 .btn {
    max-width: 120px;
@@ -236,6 +237,7 @@ header {
    }
    .hero-text { margin: auto; }
    .hero-text h1 { font-size: 3rem; }
+   
 }
 .about-left h2 { font-size: 32px; color: var(--text-dark); }
 .about-right p {

@@ -354,7 +354,6 @@ header {
 }
 .description-project a {
    font-size: clamp(0.875rem, 0.8rem, 0.3dvw, 1rem);
-   font-weight: 600;
    letter-spacing: -0.01em;
    text-decoration: none;
    color: #111;

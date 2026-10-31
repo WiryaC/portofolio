@@ -322,6 +322,12 @@ header {
 }
 
 /* PROJECT */
+.grid-project {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   gap: 16px;
+   justify-items: center;
+}
 .project h2 { font-size: 32px; color: var(--text-dark); }
 .card-project {
    border: 1px solid black;
@@ -356,5 +362,5 @@ header {
    font-size: clamp(0.875rem, 0.8rem, 0.3dvw, 1rem);
    letter-spacing: -0.01em;
    text-decoration: none;
-   color: #111;
+   color: rgba(0, 0, 0, 0.);
 }

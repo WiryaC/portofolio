@@ -327,7 +327,7 @@ header {
    gap: 16px;
    justify-items: center;
 }
-.project h2 { font-size: 32px; color: var(--text-dark); }
+.projects h2 { font-size: 32px; color: var(--text-dark); }
 .card-project {
    border: 1px solid black;
    width: 100%;

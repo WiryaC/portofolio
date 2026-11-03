@@ -350,19 +350,30 @@ header {
    flex-direction: column;
    gap: 8px;
 }
+.title-project {
+   font-size: clamp(1.3rem, 1dvw, 1.875rem);
+   font-weight: 800;
+}
+.tech-project {
+   
+   color: rgba(0, 0, 0, 0.5);
+}
+.tech-project span {
+   font-size: clamp( 0.9rem, 0.7dvw, 1rem);
+}
 .description-project p {
-   font-size: clamp(1rem, 0.85rem, 0.8dvw, 1.25rem);
-   font-weight: 700;
+   font-size: clamp(1rem, 0.8dvw, 1.25rem);
    line-height: 1.3;
    margin-bottom: 0.6rem;
    color: #111;
    border-bottom: 0.2px solid rgba(0,0,0,0.1);
    padding-bottom: 20px;
-   width: 75%;
+   width: 80%;
 }
 .description-project a {
-   font-size: clamp(0.875rem, 0.8rem, 0.3dvw, 1rem);
+   font-size: clamp(0.9rem, 0.6dvw, 1rem);
    letter-spacing: -0.01em;
    text-decoration: none;
    color: rgba(0, 0, 0, 0.5);
+   cursor: pointer;
 }

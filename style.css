@@ -157,6 +157,10 @@ header {
    gap: 24px;
    min-height: auto;
 }
+h2 {
+   font-size: clamp(1.5rem, 1.2rem + 2dvw, 2rem);
+   color: var(--text-dark);
+}
 /* HERO SECTION */
 .hero {
    max-width: 1100px;
@@ -239,7 +243,8 @@ header {
    .hero-text { margin: auto; }
    
 }
-.about-left h2 { font-size: 32px; color: var(--text-dark); }
+
+/*  ABOUT  */
 .about-right p {
    border-left: 3px solid var(--color-primary);
    padding-left: 20px;
@@ -257,10 +262,6 @@ header {
 
 /* SKILL */
 .skill .fas { font-size: 1.5em; margin-right: 7px; }
-.skill h2 { 
-   font-size: 32px; 
-   color: var(--text-dark); 
-}
 .card-skill { 
    display: flex; 
    flex-direction: column; 
@@ -296,7 +297,6 @@ header {
 }
 
 /* SERTIFIKAT */
-.certified h2 { font-size: 32px; color: var(--text-dark); }
 .certifications {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -327,7 +327,6 @@ header {
    gap: 16px;
    justify-items: center;
 }
-.projects h2 { font-size: 32px; color: var(--text-dark); }
 .card-project {
    border: 1px solid black;
    width: 100%;

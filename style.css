@@ -351,27 +351,33 @@ header {
    gap: 8px;
 }
 .title-project {
-   font-size: clamp(1.3rem, 1dvw, 1.875rem);
-   font-weight: 800;
+   font-size: clamp(1.125rem, 1dvw, 1.375rem);
+   font-weight: 700;
+   line-height: 1.25;
 }
 .tech-project {
-   
+   display: flex;
+   gap: 6px;
+   margin: 8px 0;
    color: rgba(0, 0, 0, 0.5);
 }
 .tech-project span {
-   font-size: clamp( 0.9rem, 0.7dvw, 1rem);
+   font-size: clamp( 0.7rem, 0.5dvw, 0.75rem);
+   background-color: #f8f8f8;
+   padding: 2px 8px;
+   border-radius: 999px
 }
 .description-project p {
-   font-size: clamp(1rem, 0.8dvw, 1.25rem);
-   line-height: 1.3;
+   font-size: clamp(0.85rem, 0.4dvw, 0.95rem);
+   line-height: 1.6;
    margin-bottom: 0.6rem;
-   color: #111;
+   color: #666;
    border-bottom: 0.2px solid rgba(0,0,0,0.1);
    padding-bottom: 20px;
    width: 80%;
 }
 .description-project a {
-   font-size: clamp(0.9rem, 0.6dvw, 1rem);
+   font-size: clamp(0.8rem, 0.3dvw, 0.875rem);
    letter-spacing: -0.01em;
    text-decoration: none;
    color: rgba(0, 0, 0, 0.5);

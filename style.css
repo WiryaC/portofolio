@@ -336,6 +336,7 @@ header {
    flex-direction: column;
    border-radius: 20px;
    overflow: hidden;
+   background-color: var(--bg-surface-solid);
 }
 .img-project {
    width: 100%;

@@ -158,7 +158,7 @@ header {
    padding: 80px 5%;
    display: flex;
    flex-direction: column;
-   gap: 24px;
+   gap: 42px;
    min-height: auto;
 }
 

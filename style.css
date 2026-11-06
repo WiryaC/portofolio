@@ -194,7 +194,7 @@ header {
    color: var(--text-dark);
 }
 .hero-text p { 
-   font-size: clamp(0.9rem, 0.5dvw, 1.25rem); 
+   font-size: 1.125rem; 
    line-height: 1.7rem; 
    color: var(--text-muted);
    max-width: 58ch;
@@ -214,12 +214,13 @@ header {
 }
 .btn:hover { background-color: var(--color-primary-hover); }
 .sosial-brand { 
-   font-size: 1.7rem; 
    display: flex; 
    justify-content: space-around; 
    max-width: 80px; 
 }
 .sosial-brand a {
+   font-size: 1.7rem;
+   font-weight: 600;
    text-decoration: none;
    color: var(--color-primary);
 }
@@ -250,7 +251,7 @@ header {
    border-left: 3px solid var(--color-primary);
    padding-left: 20px;
    margin-bottom: 32px;
-   font-size: 16px;
+   font-size: 1.25rem;
    line-height: 1.8;
    color: var(--text-muted);
 }
@@ -289,7 +290,7 @@ header {
    gap: 8px;
    padding: 10px;
 }
-.card-hardskill ul li, .card-softskill ul li { font-size: 14px; }
+.card-hardskill ul li, .card-softskill ul li { font-size: 0.875rem; }
 @media (min-width: 1024px) {
    .skill { display: flex; flex-direction: row; gap: 80px; align-items: center; }
    .card-skill { display: flex; flex-direction: row; gap: 24px; justify-content: center; width: 60%; }

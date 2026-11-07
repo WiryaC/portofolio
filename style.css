@@ -1,7 +1,7 @@
 :root{
   /* === CORE COLOR - MONOCHROME THEME === */
   --color-primary: #111111;
-  --color-primary-hover: #2B2B2B;
+  --color-primary-hover: #5b5b5b;
 
   /* === SURFACE & BG === */
   --bg-main: #EDEEF0; 
@@ -210,9 +210,13 @@ header {
    text-decoration: none;
    justify-content: center;
    font-size: clamp(0.85rem, 0.5dvw, 1.25rem);
-   transition: var(--transition-fast);
+   transition: 0.2s ease-out;
+   
 }
-.btn:hover { background-color: var(--color-primary-hover); }
+.btn:hover {
+   background-color: var(--color-primary-hover);
+   transform: scale(0.9) ;
+}
 .sosial-brand { 
    display: flex; 
    justify-content: space-around; 

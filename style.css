@@ -215,7 +215,7 @@ header {
 }
 .btn:hover {
    background-color: var(--color-primary-hover);
-   transform: scale(0.9) ;
+   transform: scale(1.05) ;
 }
 .sosial-brand { 
    display: flex; 

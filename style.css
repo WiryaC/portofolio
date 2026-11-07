@@ -92,7 +92,7 @@ header {
    color: var(--text-muted);
    padding: 8px 16px;
    border-radius: var(--radius-btn);
-   transition: var(--transition-fast);
+   transition: var(--transition);
 }
 .nav-links li a:hover {
    border-bottom: 2px solid var(--color-primary);
@@ -322,8 +322,11 @@ header {
    gap: 12px;
    border-radius: var(--radius-btn);
    background-color: var(--bg-surface-solid);
-   transition: var(--transition-fast);
+   transition: var(--transition);
    border: var(--border-light);  
+}
+.cup:hover {
+   transform: scale(1.02);
 }
 
 /* PROJECT */

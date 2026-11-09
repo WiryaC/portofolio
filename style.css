@@ -290,7 +290,7 @@ header {
    transition: var(--transition);
 }
 .card-hardskill:hover, .card-softskill:hover{
-   transform: scale(1.02);
+   transform: translateY(-2px);
 }
 .card-hardskill ul, .card-softskill ul {
    display: flex;
@@ -330,7 +330,7 @@ header {
    border: var(--border-light);  
 }
 .cup:hover {
-   transform: scale(1.02);
+   transform: scale(1.03);
 }
 
 /* PROJECT */
@@ -352,7 +352,7 @@ header {
    transition: var(--transition);
 }
 .card-project:hover {
-   transform: scale(1.02);
+   transform: scale(1.04);
 }
 .img-project {
    width: 100%;

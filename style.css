@@ -422,5 +422,5 @@ header {
    color: var(--color-primary);
 }
 .footer-bottom {
-  
+  color: rgba(0, 0, 0, 0.6);
 }

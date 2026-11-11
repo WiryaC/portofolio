@@ -34,14 +34,15 @@
 }
 
 body {
-   height: 200vh;
-   font-family: 'Pramukh Rounded', serif;
+   height: auto;
+   font-family: 'Instrument Sans', system-ui, sans-serif;
+   font-size: 16px;
    padding: 10px;
    background: var(--bg-main);
 }
 h1,h2{
-   font-family: 'Clash Display', serif;
-   font-size: clamp(1.5rem, 1.2rem + 2dvw, 2rem);
+   font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+   font-size: clamp(1.5rem, 1.2rem + 2vw, 2rem);
    color: var(--text-dark);
 }
 
@@ -74,7 +75,7 @@ header {
 
 .logo {
    font-weight: 700;
-   font-size: 1.5rem;
+   font-size: 1.25rem;
    color: var(--text-dark);
 }
 
@@ -127,7 +128,7 @@ header {
    text-align: center;
    color: var(--text-muted);
    padding: 18px;
-   font-size: 1.1rem;
+   font-size: 1rem;
 }
 .dropdown li a:hover {
    border-bottom: 2px solid var(--color-primary);
@@ -181,12 +182,12 @@ header {
 }
 .hero-text h1 {
    color: var(--text-muted);
-   font-size: clamp(1.3rem, 0.9dvw, 1.375rem); 
+   font-size: clamp(1.1rem, 1rem + 1vw, 1.375rem);
    font-weight: 500;
    line-height: 1.2;
 }
 .hero-text h1 span {
-   font-size: clamp(2rem, 3.5dvw, 3.75rem);
+   font-size: clamp(2.2rem, 1.8rem + 5vw, 3.75rem);
    display: block;
    font-weight: 800;
    line-height: 1.05;
@@ -194,8 +195,8 @@ header {
    color: var(--text-dark);
 }
 .hero-text p { 
-   font-size: 1.125rem; 
-   line-height: 1.7rem; 
+   font-size: 1rem; 
+   line-height: 1.6; 
    color: var(--text-muted);
    max-width: 58ch;
 }
@@ -255,8 +256,8 @@ header {
    border-left: 3px solid var(--color-primary);
    padding-left: 20px;
    margin-bottom: 32px;
-   font-size: 1.25rem;
-   line-height: 1.8;
+   font-size: 1rem;
+   line-height: 1.7;
    color: var(--text-muted);
 }
 .about-right span { color: var(--text-dark); font-weight: 700; }

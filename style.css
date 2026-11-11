@@ -252,6 +252,10 @@ header {
 }
 
 /*  ABOUT  */
+.about {
+   display: grid;
+   gap: 32px;
+}
 .about-right p {
    border-left: 3px solid var(--color-primary);
    padding-left: 20px;

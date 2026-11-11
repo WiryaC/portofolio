@@ -270,15 +270,11 @@ header {
 /* SKILL */
 .skill .fas { font-size: 1.2em; margin-right: 7px; }
 .card-skill { 
-   display: flex; 
-   flex-direction: column; 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    gap: 24px; 
 }
-.hardskill, .softskill { 
-   display: flex; 
-   flex-direction: column; 
-   gap: 16px; 
-}
+
 .hardskill h3, .softskill h3 { padding-left: 20px; }
 .card-hardskill, .card-softskill {
    border: var(--border-light);
@@ -300,12 +296,11 @@ header {
    padding: 10px;
 }
 .card-hardskill ul li, .card-softskill ul li { font-size: 0.875rem; }
-/*@media (min-width: 1024px) {
-   .skill { display: flex; flex-direction: row; gap: 80px; align-items: center; }
-   .card-skill { display: flex; flex-direction: row; gap: 24px; justify-content: center; width: 60%; }
-   .skill h2 { width: 30%; }
-   .hardskill, .softskill { width: 50%; }
-}*/
+@media (max-width: 600px) {
+   .card-skill {
+      grid-template-columns: 1fr;
+   }
+}
 
 /* SERTIFIKAT */
 .certifications {

@@ -36,7 +36,7 @@
 body {
    height: auto;
    font-family: 'Instrument Sans', system-ui, sans-serif;
-   font-size: 16px;
+   font-size: 14px;
    padding: 10px;
    background: var(--bg-main);
 }

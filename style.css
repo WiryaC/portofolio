@@ -219,7 +219,7 @@ header {
 }
 .btn:hover {
    background-color: var(--color-lime-hover);
-   transform: scale(1.05) ;
+   transform: scale(1.03) ;
 }
 .sosial-brand { 
    display: flex; 
@@ -337,7 +337,7 @@ header {
    border: var(--border-light);  
 }
 .cup:hover {
-   transform: scale(1.03);
+   transform: scale(1.02);
 }
 
 /* PROJECT */
@@ -359,7 +359,7 @@ header {
    transition: var(--transition);
 }
 .card-project:hover {
-   transform: scale(1.04);
+   transform: scale(1.02);
 }
 .img-project {
    width: 100%;

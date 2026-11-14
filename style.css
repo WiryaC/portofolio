@@ -315,15 +315,16 @@ header {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
    gap: 16px;
-   align-items: center;
+   align-items: stretch;
+   
 }
 .certifications img {
    width: 100%;
-   height: 200px;
-   border: 0.5px solid ghostwhite;
-   aspect-ratio: 16 / 9;
-   object-fit: cover;
+   aspect-ratio: 4 / 3;
+   object-fit: contain;
    object-position: center;
+   border-radius: 10px;
+   
 }
 .cup {
    width: 100%;
@@ -338,6 +339,9 @@ header {
 }
 .cup:hover {
    transform: scale(1.02);
+}
+.cup p {
+   line-height: 1.7;
 }
 
 /* PROJECT */
@@ -406,8 +410,6 @@ header {
    text-decoration: none;
    color: rgba(0, 0, 0, 0.5);
    cursor: pointer;
-   /*padding: 1.5rem 1.5rem 1.5rem 0;
-   border-top: 0.2px solid rgba(0,0,0,0.1);*/
    position: absolute;
    top: 92%;
 }

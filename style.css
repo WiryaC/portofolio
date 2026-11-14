@@ -260,8 +260,6 @@ header {
    gap: 32px;
 }
 .about-right p {
-   border-left: 3px solid var(--color-primary);
-   padding-left: 20px;
    margin-bottom: 32px;
    font-size: 1rem;
    line-height: 1.7;

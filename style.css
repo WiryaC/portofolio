@@ -3,11 +3,11 @@
   --color-primary-hover: #333333;
 
   --color-sand: #DBCBB3;
-  --color-sand-dark: #D6C9B8;
+  --color-sand-dark: #9a8a6a;
 
-  --color-lime:#A8D61A;
-  --color-lime-hover: #E6F432;
-  --color-lime-text: #111111;
+  --color-btn:  #E8DDC9;
+  --color-btn-hover:  #B8A88A;
+  --color-btn-text: #121212;
 
   --bg-main: #1E1E1C;
   --bg-surface: rgba(255, 255, 255, 0.75);
@@ -27,7 +27,7 @@
   --nav-height: 60px;
   
   --transition: 0.2s ease-out;
-  --transition-dropdown: 0.20s ease;
+  --transition-dropdown: 0.2s ease;
 }
 
 * {
@@ -178,6 +178,17 @@ header {
    gap: 24px;
    min-height: 100dvh;
 }
+.hero-gradient {
+   background-color: var(--color-sand-dark);
+   width: 80%;
+   height: 600px;
+   position: absolute;
+   border-radius: 99% 0% 0% 0%;
+   z-index: -1;
+   top: 15%;
+   right: 5%;
+   filter: blur(100px);
+}
 .hero-text { 
    display: flex; 
    flex-direction: column; 
@@ -207,7 +218,7 @@ header {
    max-width: 120px;
    display: flex;
    flex-wrap: nowrap;
-   background-color: var(--color-lime);
+   background-color: var(--color-btn);
    border-radius: var(--radius-card);
    color: var(--color-lime-text);
    padding: 15px;
@@ -218,8 +229,9 @@ header {
    
 }
 .btn:hover {
-   background-color: var(--color-lime-hover);
-   transform: scale(1.0) ;
+   background-color: var(--color-btn-hover);
+   transform: scale(1.02) ;
+   border: 1px solid var(--color-btn-hover);
 }
 .sosial-brand { 
    display: flex; 
@@ -251,6 +263,12 @@ header {
       align-items: center;
    }
    .hero-text { margin: auto; }
+   .hero-gradient {
+      top: 38%;
+      border-radius: 0% 0% 0% 100%;
+      width: 90%;
+      filter: blur(200px);
+   }
    
 }
 

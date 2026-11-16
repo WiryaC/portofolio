@@ -325,8 +325,9 @@ header {
    flex-direction: column;
    gap: 8px;
    padding: 10px;
+   list-style: none;
 }
-.card-hardskill ul li, .card-softskill ul li { font-size: 0.875rem; }
+.card-hardskill ul li, .card-softskill ul li { font-size: 0.775rem; }
 @media (max-width: 600px) {
    .card-skill {
       grid-template-columns: 1fr;

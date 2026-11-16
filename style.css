@@ -20,11 +20,12 @@
   --text-muted: #DBCBB3;
   --text-light: #F5F0E8;
 
-  --blur-main: 12px;
+  --blur-main: 10px;
   --radius-pill: 50px;
   --radius-card: 30px;
   --radius-btn: 20px;
   --nav-height: 60px;
+  --bg-nav-drop: rgba(232, 221, 201, 0.65);
   
   --transition: 0.2s ease-out;
   --transition-dropdown: 0.2s ease;
@@ -63,7 +64,7 @@ header {
    justify-content: space-between;
    align-items: center;
    padding: 20px;
-   background: var(--bg-surface);
+   background: var(--bg-nav-drop);
    backdrop-filter: blur(var(--blur-main));
    -webkit-backdrop-filter: blur(var(--blur-main));
    border: var(--border-light);
@@ -111,7 +112,7 @@ header {
    max-width: 350px;
    z-index: 998; 
    padding: 10px;
-   background: var(--bg-surface);
+   background: var(--bg-nav-drop);
    backdrop-filter: blur(var(--blur-main));
    -webkit-backdrop-filter: blur(var(--blur-main));
    border: var(--border-light);
@@ -230,8 +231,8 @@ header {
 }
 .btn:hover {
    background-color: var(--color-btn-hover);
-   transform: scale(1.02) ;
-   border: 1px solid var(--color-btn-hover);
+   transform: scale(1.03) ;
+   
 }
 .sosial-brand { 
    display: flex; 

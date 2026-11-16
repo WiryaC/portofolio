@@ -29,6 +29,8 @@
   
   --transition: 0.2s ease-out;
   --transition-dropdown: 0.2s ease;
+  
+  --gradient-gold: linear-gradient(180deg, #F0E2B6 0%, #D4AF6A 45%, #B9975B 100%);
 }
 
 * {
@@ -207,7 +209,11 @@ header {
    font-weight: 700;
    line-height: 1.05;
    letter-spacing: 0.02em;
-   color: var(--text-dark);
+   background: var(--gradient-gold);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+
 }
 .hero-text p { 
    font-size: 1rem; 
@@ -253,7 +259,7 @@ header {
    justify-content: center;
    align-items: center;
    border-radius: 50%;
-   border: 10px solid var(--bg-surface-solid);
+   border: 10px solid var(--text-dark);
    box-sizing: border-box;
 }
 @media (min-width: 768px) {

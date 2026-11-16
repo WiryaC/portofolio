@@ -16,7 +16,7 @@
   --border-light: 1px solid rgba(28, 28, 28, 0.10);
   --border-strong: 1px solid #1C1C1C;
 
-  --text-dark: #DBCBB3;
+  --text-dark: #8a7a5a;
   --text-muted: #DBCBB3;
   --text-light: #F5F0E8;
 
@@ -47,7 +47,7 @@ body {
 h1,h2{
    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
    font-size: clamp(1.5rem, 1.2rem + 2vw, 2rem);
-   color: var(--text-dark);
+   color: var(--text-muted);
 }
 
 header {
@@ -398,7 +398,7 @@ header {
 .list-pelatihan span {
   background: var(--color-sand-dark);
   border: 1px solid #e5e5e5;
-  color: #333;
+  color: #fff;
   font-size: 12px;
   font-weight: 500;
   padding: 5px 10px;
@@ -448,7 +448,7 @@ header {
    display: flex;
    gap: 6px;
    margin: 8px 0;
-   color: #333;
+   color: #fff;
 }
 .tech-project span {
    font-size: clamp( 0.7rem, 0.5dvw, 0.75rem);

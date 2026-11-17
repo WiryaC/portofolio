@@ -181,17 +181,29 @@ header {
    gap: 24px;
    min-height: 100dvh;
 }
+
 .hero-gradient {
+   background-color: var(--color-sand-dark);
+   width: 25%;
+   height: 800px;
+   position: absolute;
+   z-index: -1;
+   right: 0;
+   top: 0;
+   filter: blur(100px);
+   transform: ;
+}
+/*.hero-gradient {
    background-color: var(--color-sand-dark);
    width: 80%;
    height: 600px;
    position: absolute;
-   border-radius: 99% 0% 0% 0%;
+   border-radius: 100% 0% 0% 0%;
    z-index: -1;
    top: 15%;
    right: 5%;
    filter: blur(100px);
-}
+} */
 .hero-text { 
    display: flex; 
    flex-direction: column; 
@@ -271,9 +283,10 @@ header {
    }
    .hero-text { margin: auto; }
    .hero-gradient {
-      top: 38%;
-      border-radius: 0% 0% 0% 100%;
-      width: 90%;
+      top: 50%;
+      right: 10%;
+      height: 200px;
+      width: 55%;
       filter: blur(200px);
    }
    
@@ -283,6 +296,16 @@ header {
 .about {
    display: grid;
    gap: 32px;
+}
+.about-gradient {
+   background-color: var(--color-sand-dark);
+   width: 20%;
+   height: 700px;
+   position: absolute;
+   z-index: -1;
+   right: 0;
+   top: 0;
+   filter: blur(100px);
 }
 .about-right p {
    margin-bottom: 32px;

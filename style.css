@@ -296,15 +296,18 @@ header {
 .about {
    display: grid;
    gap: 32px;
+   position: relative;
 }
 .about-gradient {
    background-color: var(--color-sand-dark);
-   width: 20%;
-   height: 700px;
+   width: 50%;
+   height: 300px;
    position: absolute;
    z-index: -1;
-   right: 0;
-   top: 0;
+   top: 30%;
+   left: 30%;
+   transform: translateX(-50%, -50%);
+   border-radius: 50%;
    filter: blur(100px);
 }
 .about-right p {
@@ -314,11 +317,15 @@ header {
    color: var(--text-muted);
 }
 .about-right span { color: var(--text-dark); font-weight: 700; }
-/*@media (min-width: 1024px) {
-  .about { flex-direction: row; align-items: center; gap: 80px; }
-  .about-left { width: 30%; }
-  .about-right { width: 60%; }
-}*/
+@media (min-width: 768px) {
+  .about-gradient {
+     width: 70%;
+     height: 200px;
+     top: 50%;
+     left: 20%;
+     filter: blur(200px);
+  }
+}
 
 
 /* SKILL */

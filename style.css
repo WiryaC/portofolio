@@ -5,9 +5,9 @@
   --color-sand: #DBCBB3;
   --color-sand-dark: #9a8a6a;
 
-  --color-btn:  #E8DDC9;
-  --color-btn-hover:  #B8A88A;
-  --color-btn-text: #121212;
+  --color-btn:  #9d8f6f;
+  --color-btn-hover:  #222;
+  --color-btn-text: #222;
 
   --bg-main: #1E1E1C;
   --bg-surface: rgba(255, 255, 255, 0.75);
@@ -191,7 +191,6 @@ header {
    right: 0;
    top: 0;
    filter: blur(100px);
-   transform: ;
 }
 /*.hero-gradient {
    background-color: var(--color-sand-dark);
@@ -249,7 +248,9 @@ header {
 }
 .btn:hover {
    background-color: var(--color-btn-hover);
+   color: var(--color-sand);
    transform: scale(1.03) ;
+   box-shadow: 4px 0 20px grey;
    
 }
 .sosial-brand { 

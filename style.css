@@ -6,7 +6,7 @@
   --color-sand-dark: #9a8a6a;
 
   --color-btn:  #9d8f6f;
-  --color-btn-hover:  #222;
+  --color-btn-hover:  #333;
   --color-btn-text: #222;
 
   --bg-main: #1E1E1C;
@@ -262,7 +262,7 @@ header {
    font-size: 1.7rem;
    font-weight: 600;
    text-decoration: none;
-   color: var(--color-sand);
+   color: var(--color-btn);
 }
 .hero-img { max-width: 550px; margin: 50px auto 50px auto; }
 .main-profile {
@@ -338,7 +338,7 @@ header {
      
 }
 .tombol-tab {
-    background-color: #9d8f6f;
+    background-color: var(--color-btn);
     color: #222;
     padding: 8px;
     border: none;
@@ -348,12 +348,12 @@ header {
 }
 .tombol-tab.active {
     background-color: #111;
-    color: #9d8f6f;
+    color: var(--color-btn);
     box-shadow: 1px 0 10px grey;
 }
 .tombol-tab:hover {
-    background-color: #333;
-    color: #9d8f6f;
+    background-color: var(--color-btn-hover);
+    color: var(--color-btn);
     box-shadow: 1px 0 10px grey;
 }
     
@@ -401,7 +401,7 @@ header {
    flex-direction: column;
    gap: 12px;
    border-radius: var(--radius-btn);
-   background-color: var(--bg-surface-solid);
+   background-color: var(--color-btn);
    transition: var(--transition);
    border: var(--border-light);  
 }
@@ -447,9 +447,9 @@ header {
 }
 
 .list-pelatihan span {
-  background: var(--color-sand-dark);
-  border: 1px solid #e5e5e5;
-  color: #fff;
+  background: var(--color-btn-hover);
+  border: 1px solid grey;
+  color: var(--color-btn);
   font-size: 12px;
   font-weight: 500;
   padding: 5px 10px;
@@ -472,7 +472,7 @@ header {
    flex-direction: column;
    border-radius: 20px;
    overflow: hidden;
-   background-color: var(--bg-surface-solid);
+   background-color: var(--color-btn);
    transition: var(--transition);
 }
 .card-project:hover {
@@ -499,11 +499,11 @@ header {
    display: flex;
    gap: 6px;
    margin: 8px 0;
-   color: #fff;
+   color: var(--color-btn);
 }
 .tech-project span {
    font-size: clamp( 0.7rem, 0.5dvw, 0.75rem);
-   background-color: var(--color-sand-dark);
+   background-color: var(--color-btn-hover);
    padding: 2px 8px;
    border-radius: 999px
 }
@@ -511,7 +511,7 @@ header {
    font-size: clamp(0.85rem, 0.4dvw, 0.95rem);
    line-height: 1.6;
    margin-bottom: 0.6rem;
-   color: #666;
+   color: var(--color-btn-hover);
    padding-bottom: 70px;
 
 }
@@ -541,8 +541,8 @@ header {
 }
 .footer-brand a {
    text-decoration: none;
-   color: var(--color-sand);
+   color: var(--color-btn);
 }
 .footer-bottom {
-  color: var(--color-sand);
+  color: var(--color-btn);
 }

@@ -165,7 +165,7 @@ header {
    padding: 80px 5%;
    display: flex;
    flex-direction: column;
-   gap: 42px;
+   gap: 24px;
    min-height: auto;
 }
 
@@ -330,39 +330,52 @@ header {
 
 
 /* SKILL */
-.skill .fas { font-size: 1.2em; margin-right: 7px; }
-.card-skill { 
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 24px; 
+.tabs-skill {
+    display: flex;
+    gap: 5px;
+    max-width: 100%;
+    
+     
 }
-
-.hardskill h3, .softskill h3 { padding-left: 20px; }
-.card-hardskill, .card-softskill {
-   border: var(--border-light);
-   border-radius: var(--radius-card);
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
-   padding: 20px;
-   background-color: var(--bg-surface-solid);
-   transition: var(--transition);
+.tombol-tab {
+    background-color: #9d8f6f;
+    color: #222;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    width: 50%;
+    transition: 0.2s ease-out;
 }
-.card-hardskill:hover, .card-softskill:hover{
-   transform: translateY(-2px);
+.tombol-tab.active {
+    background-color: #111;
+    color: #9d8f6f;
+    box-shadow: 1px 0 10px grey;
 }
-.card-hardskill ul, .card-softskill ul {
-   display: flex;
-   flex-direction: column;
-   gap: 8px;
-   padding: 10px;
-   list-style: none;
+.tombol-tab:hover {
+    background-color: #333;
+    color: #9d8f6f;
+    box-shadow: 1px 0 10px grey;
 }
-.card-hardskill ul li, .card-softskill ul li { font-size: 0.775rem; }
-@media (max-width: 600px) {
-   .card-skill {
-      grid-template-columns: 1fr;
-   }
+    
+.isi-tab {
+    background-color: #9d8f6f;
+    color: #222;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    line-height: 1.6;
+    display: none;
+    min-height: 150px;
+}
+.isi-tab.active {
+    display: block;
+}
+.isi-tab ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* SERTIFIKAT */

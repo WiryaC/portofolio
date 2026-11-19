@@ -92,6 +92,10 @@ header {
 .nav-links li a:hover {
    border-bottom: 2px solid var(--color-primary);
    color: var(--color-primary);
+   transform: scale(1.03);
+}
+.nav-links li a:active {
+   border-bottom: 2px solid var(--color-primary);
 }
 
 .dropdown {
@@ -239,7 +243,11 @@ header {
    color: var(--color-sand);
    transform: scale(1.03) ;
    box-shadow: 4px 0 20px grey;
-   
+}
+.btn:active {
+   background-color: #111;
+   color: var(--color-sand-dark);
+   box-shadow: 4px 0 20px grey;
 }
 .sosial-brand { 
    display: flex; 

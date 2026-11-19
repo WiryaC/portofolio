@@ -366,7 +366,7 @@ header {
     border-radius: 10px;
     line-height: 1.6;
     display: none;
-    min-height: 150px;
+    min-height: 170px;
 }
 .isi-tab.active {
     display: block;

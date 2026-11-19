@@ -1,36 +1,22 @@
 :root{
   --color-primary: #1E1E1C;
-  --color-primary-hover: #333333;
-
   --color-sand: #DBCBB3;
   --color-sand-dark: #9a8a6a;
-
-  --color-btn:  #9d8f6f;
-  --color-btn-hover:  #333;
-  --color-btn-text: #222;
-
+  --color-btn: #9d8f6f;
+  --color-btn-hover: #333;
   --bg-main: #1E1E1C;
-  --bg-surface: rgba(255, 255, 255, 0.75);
-  --bg-surface-solid: #F5F0E8;
-  --bg-dark: #1C1C1C;
+  --bg-nav-drop: rgba(232, 221, 201, 0.65);
   --border-light: 1px solid rgba(28, 28, 28, 0.10);
-  --border-strong: 1px solid #1C1C1C;
-
   --text-dark: #8a7a5a;
   --text-muted: #DBCBB3;
-  --text-light: #F5F0E8;
-
   --blur-main: 10px;
+  --gradient-gold: linear-gradient(180deg, #F0E2B6 0%, #D4AF6A 45%, #B9975B 100%);
   --radius-pill: 50px;
   --radius-card: 30px;
   --radius-btn: 20px;
   --nav-height: 60px;
-  --bg-nav-drop: rgba(232, 221, 201, 0.65);
-  
   --transition: 0.2s ease-out;
   --transition-dropdown: 0.2s ease;
-  
-  --gradient-gold: linear-gradient(180deg, #F0E2B6 0%, #D4AF6A 45%, #B9975B 100%);
 }
 
 * {
@@ -330,12 +316,12 @@ header {
 
 
 /* SKILL */
+
 .tabs-skill {
     display: flex;
+    flex-direction: rows;
     gap: 5px;
     max-width: 100%;
-    
-     
 }
 .tombol-tab {
     background-color: var(--color-btn);
@@ -343,7 +329,7 @@ header {
     padding: 8px;
     border: none;
     border-radius: 16px;
-    width: 50%;
+    width: 100%;
     transition: 0.2s ease-out;
 }
 .tombol-tab.active {
@@ -376,6 +362,24 @@ header {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+@media (min-width: 768px) {
+   .skill h2 {
+      margin: auto;
+   }
+   
+   .tabs-skill {
+      display: flex;
+      justify-content: center;
+   }
+   .tombol-tab {
+      width: 15%;
+   }
+   .isi-tab {
+      max-width: 540px;
+      margin: auto;
+   }
 }
 
 /* SERTIFIKAT */

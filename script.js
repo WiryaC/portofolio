@@ -27,6 +27,11 @@ sTombol.addEventListener('click', (e) => {
 const uMode = document.querySelector('#themeToggle');
 
 uMode.addEventListener('click', () => {
-  document.body.classList.toggle('light')
+  const isLight = document.body.classList.toggle('light')
+  
+  uMode.querySelector('.light-mode').style.display = isLight ? 'none' : 'block';
+  uMode.querySelector('.dark-mode').style.display = isLight ? 'block' : 'none';
+  
+
 });
   

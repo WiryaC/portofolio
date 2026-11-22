@@ -37,7 +37,6 @@ body {
 }
 body.light {
    background: #f9f7f2;
-   
 }
 
 h1,h2{
@@ -95,13 +94,16 @@ header {
    border: none;
    border-radius: 50%;
    right: 15%;
+   transition: 0.8s;
 }
 #themeToggle i {
    font-size: 1.5rem;
 }
 #themeToggle .dark-mode {
    display: none;
+   transition: 0.8s;
 }
+
 
 .nav-links li a {
    text-decoration: none;

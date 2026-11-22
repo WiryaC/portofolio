@@ -23,3 +23,10 @@ sTombol.addEventListener('click', (e) => {
    const idTujuan = tombol.dataset.target;
    document.getElementById(idTujuan).classList.add('active')
 });
+
+const uMode = document.querySelector('#themeToggle');
+
+uMode.addEventListener('click', () => {
+  document.body.classList.toggle('light')
+});
+  

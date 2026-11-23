@@ -30,20 +30,17 @@ let isLight = false
 
 
 uMode.addEventListener('click', () => {
-  document.body.classList.toggle('light');
+  const bUbah = document.body.classList.toggle('light');
+  const icon = document.querySelector('#icon');
   
   
-  const icon = document.querySelector('#icon')
-  
-  if (isLight) {
-          icon.classList.add('fa-sun');
-          icon.classList.remove('fa-moon');
-          isLight = false;
-        } else {
-          icon.classList.add('fa-moon');
-          icon.classList.remove('fa-sun');
-          isLight = true;
-        }
+  if (bUbah === true) {
+    icon.classList.remove('fa-sun')
+    icon.classList.add('fa-moon')
+  }else {
+    icon.classList.add('fa-sun')
+    icon.classList.remove('fa-moon')
+  }
   
 });
   

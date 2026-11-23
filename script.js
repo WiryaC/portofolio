@@ -25,22 +25,19 @@ sTombol.addEventListener('click', (e) => {
 });
 
 const uMode = document.querySelector('#themeToggle');
-let isLight = false
-  
+const icon = document.querySelector('#icon');
 
-
+icon.onanimationend = () => {icon.classList.remove('muter')};
 uMode.addEventListener('click', () => {
+  
   const bUbah = document.body.classList.toggle('light');
-  const icon = document.querySelector('#icon');
   
-  
-  if (bUbah === true) {
+    if (bUbah === true) {
     icon.classList.remove('fa-sun')
     icon.classList.add('fa-moon')
   }else {
     icon.classList.add('fa-sun')
     icon.classList.remove('fa-moon')
   }
-  
+    icon.classList.add('muter')
 });
-  

@@ -33,7 +33,7 @@ body {
    font-size: 14px;
    padding: 10px;
    background: var(--bg-main);
-   transition: 0.8s;
+   transition: 0.5s;
 }
 body.light {
    background: #f9f7f2;
@@ -94,10 +94,19 @@ header {
    border: none;
    border-radius: 50%;
    right: 15%;
-   transition: 0.8s;
+   width: 30px;
+   height: 30px;
 }
-#themeToggle i {
+#icon {
    font-size: 1.5rem;
+}
+#icon.muter {
+   animation: muter 0.5s ease;
+}
+
+@keyframes muter {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
 }
 
 
@@ -205,17 +214,6 @@ header {
    top: 0;
    filter: blur(100px);
 }
-/*.hero-gradient {
-   background-color: var(--color-sand-dark);
-   width: 80%;
-   height: 600px;
-   position: absolute;
-   border-radius: 100% 0% 0% 0%;
-   z-index: -1;
-   top: 15%;
-   right: 5%;
-   filter: blur(100px);
-} */
 .hero-text { 
    display: flex; 
    flex-direction: column; 

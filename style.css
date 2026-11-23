@@ -99,10 +99,6 @@ header {
 #themeToggle i {
    font-size: 1.5rem;
 }
-#themeToggle .dark-mode {
-   display: none;
-   transition: 0.8s;
-}
 
 
 .nav-links li a {

@@ -96,6 +96,7 @@ header {
    right: 15%;
    width: 30px;
    height: 30px;
+   cursor: pointer;
 }
 #icon {
    font-size: 1.5rem;
@@ -172,10 +173,10 @@ header {
 }
 
 @media (min-width:767px) {
-   .nav-links {display: flex;}
+   .nav-links {display: flex; margin-right: 45px;}
    .nav-toggle {display: none;}
    .dropdown {display: none !important;}
-   #themeToggle {position: static;}
+   #themeToggle {right: 2%;}
    .nav {justify-content: space-between;}
 }
 

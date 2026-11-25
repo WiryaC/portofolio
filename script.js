@@ -1,3 +1,4 @@
+//fitur Dropdown
 const toggle = document.getElementById('nav_toggle');
 const dropdown = document.querySelector('.dropdown');
 const nav = document.querySelector('.nav');
@@ -9,21 +10,22 @@ links.forEach(link => {
   });
 });
 
-
+//fitur Tabs
 const sTombol = document.querySelector('.tabs-skill')
     
 sTombol.addEventListener('click', (e) => {
-   const tombol = e.target.closest('.tombol-tab');
-   if(!tombol) return;
-
-   document.querySelectorAll('.tombol-tab').forEach(t => t.classList.remove('active'));
-   document.querySelectorAll('.isi-tab').forEach(i => i.classList.remove('active'));
-      
-   tombol.classList.add('active');
-   const idTujuan = tombol.dataset.target;
-   document.getElementById(idTujuan).classList.add('active')
+  const tombol = e.target.closest('.tombol-tab');
+  if(!tombol) return;
+  
+  document.querySelectorAll('.tombol-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.isi-tab').forEach(i => i.classList.remove('active'));
+  
+  tombol.classList.add('active');
+  const idTujuan = tombol.dataset.target;
+  document.getElementById(idTujuan).classList.add('active')
 });
 
+// fitur dark/light mode
 const uMode = document.querySelector('#themeToggle');
 const icon = document.querySelector('#icon');
 

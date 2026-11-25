@@ -74,7 +74,21 @@ body.light .description-project p {
 body.light .card-project a {
    color: var(--color-primary);
 }
-
+body.light .btn:hover {
+   background-color: #ccc;
+   color: var(--color-btn);
+}
+body.light .btn:active {
+   background-color: #fff;
+}
+body.light .tombol-tab:hover {
+   background-color: #ccc;
+   color: var(--color-btn);
+}
+body.light .tombol-tab.active {
+   background-color: #fff;
+   color: var(--color-btn);
+}
 h1,h2{
    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
    font-size: clamp(1.5rem, 1.2rem + 2vw, 2rem);

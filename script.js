@@ -29,6 +29,7 @@ sTombol.addEventListener('click', (e) => {
 const uMode = document.querySelector('#themeToggle');
 const icon = document.querySelector('#icon');
 const uImg = document.querySelector('.main-profile');
+const project2 = document.querySelector('#project2')
 
 icon.onanimationend = () => {icon.classList.remove('muter')};
 uMode.addEventListener('click', () => {
@@ -39,9 +40,9 @@ uMode.addEventListener('click', () => {
   
   setTimeout(() => {
     if (bUbah === true) {
-      uImg.src = 'image/profile/silver_profile.jpg';
+      uImg.src, project2.src = 'image/profile/silver_profile.jpg';
     } else {
-      uImg.src = 'image/profile/gold_profile.jpg';
+      uImg.src, project2.src = 'image/profile/gold_profile.jpg';
     }
     uImg.style.opacity = '1'
   }, 250);

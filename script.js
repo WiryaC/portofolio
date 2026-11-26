@@ -28,21 +28,32 @@ sTombol.addEventListener('click', (e) => {
 // fitur dark/light mode
 const uMode = document.querySelector('#themeToggle');
 const icon = document.querySelector('#icon');
+const uImg = document.querySelector('.main-profile');
 
 icon.onanimationend = () => {icon.classList.remove('muter')};
 uMode.addEventListener('click', () => {
   
   const bUbah = document.body.classList.toggle('light');
-  const uImg = document.querySelector('.main-profile');
+  
+  uImg.style.opacity = '0'
+  
+  setTimeout(() => {
+    if (bUbah === true) {
+      uImg.src = 'image/profile/silver_profile.jpg';
+    } else {
+      uImg.src = 'image/profile/gold_profile.jpg';
+    }
+    uImg.style.opacity = '1'
+  }, 250);
   
     if (bUbah === true) {
     icon.classList.remove('fa-sun')
     icon.classList.add('fa-moon')
-    uImg.src = 'image/profile/silver_profile.jpg';
+    
   }else {
     icon.classList.add('fa-sun')
     icon.classList.remove('fa-moon')
-    uImg.src = 'image/profile/gold_profile.jpg';
+    
   }
     icon.classList.add('muter')
 });

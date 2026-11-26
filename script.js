@@ -40,9 +40,11 @@ uMode.addEventListener('click', () => {
   
   setTimeout(() => {
     if (bUbah === true) {
-      uImg.src, project2.src = 'image/profile/silver_profile.jpg';
+      uImg.src = 'image/profile/silver_profile.jpg';
+      project2.src = 'image/profile/silver_profile.jpg';
     } else {
-      uImg.src, project2.src = 'image/profile/gold_profile.jpg';
+      uImg.src = 'image/profile/gold_profile.jpg';
+      project2.src = 'image/profile/silver_profile.jpg';
     }
     uImg.style.opacity = '1'
   }, 250);

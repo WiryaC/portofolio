@@ -33,13 +33,18 @@ icon.onanimationend = () => {icon.classList.remove('muter')};
 uMode.addEventListener('click', () => {
   
   const bUbah = document.body.classList.toggle('light');
+  const uImg = document.querySelector('.main-profile');
   
     if (bUbah === true) {
     icon.classList.remove('fa-sun')
     icon.classList.add('fa-moon')
+    uImg.src = 'image/profile/silver_profile.jpg';
   }else {
     icon.classList.add('fa-sun')
     icon.classList.remove('fa-moon')
+    uImg.src = 'image/profile/gold_profile.jpg';
   }
     icon.classList.add('muter')
 });
+
+

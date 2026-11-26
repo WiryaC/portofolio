@@ -44,7 +44,7 @@ uMode.addEventListener('click', () => {
       project2.src = 'image/profile/silver_profile.jpg';
     } else {
       uImg.src = 'image/profile/gold_profile.jpg';
-      project2.src = 'image/profile/silver_profile.jpg';
+      project2.src = 'image/profile/gold_profile.jpg';
     }
     uImg.style.opacity = '1'
   }, 250);

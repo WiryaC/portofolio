@@ -62,3 +62,30 @@ uMode.addEventListener('click', () => {
 });
 
 
+//modal
+const modal = document.getElementById('imgModal');
+const modalImg = document.getElementById('modalImg');
+const modalCaption = document.getElementById('modalCaption');
+
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('zoomable')) {
+    modalImg.src = e.target.src;
+    modalCaption.textContent = e.target.alt;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal || e.target.classList.contains('modal-close')) {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});

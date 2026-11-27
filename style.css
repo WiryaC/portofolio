@@ -562,6 +562,7 @@ header {
    aspect-ratio: 4 / 3;
    object-fit: cover;
    object-position: center;
+   transition: opacity 0.5 ease;
 }
 .description-project {
    padding: 15px 1.5rem ;
@@ -625,3 +626,5 @@ header {
 .footer-bottom {
   color: var(--color-btn);
 }
+
+
